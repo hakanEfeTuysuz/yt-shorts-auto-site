@@ -3,43 +3,56 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gizlilik Politikası · yt-shorts-auto</title>
-<style>
-  body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;max-width:680px;margin:48px auto;padding:0 16px;line-height:1.6;color:#0f172a;background:#f8fafc}
-  a{color:#4f46e5} .muted{color:#475569}
-</style>
+<title>Privacy Policy · yt-shorts-auto</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<p><a href="index.html">← yt-shorts-auto</a></p>
-<h1>Gizlilik Politikası</h1>
-<p class="muted">Son güncelleme: 22 Kasım 2026</p>
-<ul>
-  <li>yt-shorts-auto yalnızca geliştiricinin kendi Google hesabıyla, kendi YouTube kanalına video
-      yüklemek için kullanılır.</li>
-  <li>Uygulama yalnızca <code>youtube.upload</code> izni ister. Bu izin video yüklemek dışında
-      hiçbir amaçla kullanılmaz.</li>
-  <li>Hiçbir kullanıcı verisi toplanmaz, satılmaz, paylaşılmaz veya üçüncü taraflara aktarılmaz.</li>
-  <li>OAuth kimlik bilgileri yalnızca geliştiricinin kendi ortamında şifreli gizli değişkenler olarak
-      saklanır.</li>
-  <li>Erişim izni istenildiği an <a href="https://myaccount.google.com/permissions">Google hesap
-      izinleri</a> sayfasından kaldırılabilir.</li>
-</ul>
-<p>yt-shorts-auto'nun Google API'lerinden aldığı bilgileri kullanımı, Sınırlı Kullanım (Limited Use)
-gereklilikleri dahil olmak üzere
-<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>'ye uygundur.</p>
-
+<nav><a href="index.html">← yt-shorts-auto</a><a href="terms.html">Terms of Service</a></nav>
 <h1>Privacy Policy</h1>
-<ul>
-  <li>yt-shorts-auto is used solely by its developer to upload videos to the developer's own YouTube channel.</li>
-  <li>It requests only the <code>youtube.upload</code> scope and uses it for no other purpose.</li>
-  <li>No user data is collected, sold, shared or transferred to third parties.</li>
-  <li>OAuth credentials are stored only in the developer's own environment as encrypted secrets.</li>
-  <li>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.</li>
-</ul>
-<p>yt-shorts-auto's use of information received from Google APIs adheres to the
-<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
-including the Limited Use requirements.</p>
+<p class="muted">Last updated: 22 November 2026</p>
 
-<p>İletişim / Contact: <a href="https://github.com/hakanEfeTuysuz">github.com/hakanEfeTuysuz</a></p>
+<h2>1. Use of YouTube API Services</h2>
+<p>yt-shorts-auto uses <strong>YouTube API Services</strong> (YouTube Data API v3) to upload videos
+to the developer's own YouTube channel. By using this app you agree to be bound by the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of data is
+described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>
+(<a href="http://www.google.com/policies/privacy">http://www.google.com/policies/privacy</a>).</p>
+
+<h2>2. What data is accessed, collected, stored and shared</h2>
+<ul>
+  <li><strong>Accessed:</strong> only the <code>youtube.upload</code> permission, used solely to call
+      <code>videos.insert</code> and upload videos with their title, description and tags.
+      The app does not read channel data, comments, analytics, subscribers or any other user data.</li>
+  <li><strong>Stored:</strong> the OAuth client credentials and a refresh token are stored only in the
+      owner's own environment (a local file and encrypted GitHub Actions secrets). The YouTube video ID
+      returned after each upload is stored in the owner's private repository as a publishing record.</li>
+  <li><strong>Collected about other people:</strong> none. The app has a single user (its owner).</li>
+  <li><strong>Shared:</strong> no data is sold, shared with, or transferred to any third party.</li>
+  <li><strong>Cookies / tracking:</strong> this website and the app use no cookies, analytics or
+      tracking technologies, and no device information is collected.</li>
+</ul>
+
+<h2>3. Revoking access and deleting data</h2>
+<p>Access can be revoked at any time via the
+<a href="https://security.google.com/settings/security/permissions">Google security settings page</a>.
+After revocation the stored refresh token stops working and is deleted from the owner's environment.
+Stored API data (video IDs) can be deleted on request; any stored API data is deleted within 7 days
+of revocation or of a deletion request, and is never kept longer than 30 days without being refreshed,
+as required by the YouTube API Services Developer Policies.</p>
+
+<h2>4. Contact</h2>
+<p>Questions about this policy: <a href="https://github.com/hakanEfeTuysuz">github.com/hakanEfeTuysuz</a></p>
+
+<hr>
+<h1>Gizlilik Politikası</h1>
+<ul>
+  <li>yt-shorts-auto <strong>YouTube API Servisleri</strong>'ni kullanır ve yalnızca geliştiricinin kendi
+      kanalına video yükler. Kullanarak <a href="https://www.youtube.com/t/terms">YouTube Hizmet Şartları</a>'nı
+      kabul etmiş olursunuz. Bkz. <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>.</li>
+  <li>Yalnızca <code>youtube.upload</code> izni kullanılır; başka hiçbir veri okunmaz, toplanmaz, paylaşılmaz.</li>
+  <li>Kimlik bilgileri yalnızca sahibin ortamında (yerel dosya ve şifreli GitHub secrets) saklanır.</li>
+  <li>Erişim <a href="https://security.google.com/settings/security/permissions">Google güvenlik ayarları</a>
+      sayfasından her an kaldırılabilir; kaldırıldığında saklanan veriler 7 gün içinde silinir.</li>
+</ul>
 </body>
 </html>

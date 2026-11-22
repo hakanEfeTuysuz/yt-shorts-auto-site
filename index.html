@@ -4,27 +4,34 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>yt-shorts-auto</title>
-<style>
-  body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;max-width:680px;margin:48px auto;padding:0 16px;line-height:1.6;color:#0f172a;background:#f8fafc}
-  h1{font-size:1.8rem;margin-bottom:.2rem} a{color:#4f46e5} .muted{color:#475569}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1>yt-shorts-auto</h1>
 <p class="muted">Kişisel YouTube Shorts otomasyonu · Personal YouTube Shorts automation</p>
-
-<h2>Bu uygulama nedir?</h2>
-<p>yt-shorts-auto, bilgisayar bilimi kavramlarını anlatan kısa dikey videoları (YouTube Shorts)
-otomatik olarak üreten ve geliştiricinin <strong>kendi</strong> YouTube kanalına yükleyen kişisel bir
-araçtır. Uygulama yalnızca sahibinin hesabıyla kullanılır; başka kullanıcılara hizmet vermez.</p>
+<nav><a href="privacy.html">Gizlilik Politikası / Privacy Policy</a><a href="terms.html">Hizmet Şartları / Terms of Service</a></nav>
 
 <h2>What is this app?</h2>
-<p>yt-shorts-auto is a personal tool that renders short vertical videos explaining computer
-science concepts and uploads them to the developer's <strong>own</strong> YouTube channel via the
-YouTube Data API. It is used only by its owner and does not serve other users.</p>
+<p>yt-shorts-auto is a personal, single-user tool that renders short vertical educational videos
+(computer science concepts, in Turkish) and uploads them to the developer's <strong>own</strong>
+YouTube channel using the <span class="yt">YouTube</span> Data API (YouTube API Services).
+It is operated only by its owner; it has no public user interface and does not serve other users.</p>
+<ul>
+  <li>API used: YouTube Data API v3, endpoint <code>videos.insert</code> only.</li>
+  <li>OAuth scope: <code>https://www.googleapis.com/auth/youtube.upload</code></li>
+  <li>Runs once per day as a scheduled job (about 1 upload per day).</li>
+</ul>
 
-<p>Google API kapsamı / scope: <code>https://www.googleapis.com/auth/youtube.upload</code></p>
+<h2>Bu uygulama nedir?</h2>
+<p>yt-shorts-auto, bilgisayar bilimi kavramlarını anlatan kısa dikey videoları otomatik üreten ve
+geliştiricinin <strong>kendi</strong> YouTube kanalına YouTube Data API (YouTube API Servisleri) ile
+yükleyen kişisel bir araçtır. Yalnızca sahibi tarafından kullanılır; başka kullanıcılara hizmet vermez.</p>
 
-<p><a href="privacy.html">Gizlilik Politikası / Privacy Policy</a></p>
+<footer>
+  This app uses YouTube API Services. By using it you agree to the
+  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.
+  See also the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+  Contact: <a href="https://github.com/hakanEfeTuysuz">github.com/hakanEfeTuysuz</a>
+</footer>
 </body>
 </html>
